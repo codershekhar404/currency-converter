@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to external CSS stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome - External CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Title of the HTML document -->
+  <title>Currency Converter</title>
+</head>
+
+<body>
+  <!-- Currency Converter Form -->
+  <form class="container" onsubmit="return false">
+    <div>
+      <!-- Dropdown for selecting 'from' currency -->
+      <select id="fromDropdown"></select>
+      
+      <!-- Input field for entering amount to convert -->
+      <input type="number" id="amountOne">
+    </div>
+    
+    <!-- Swap Button Container -->
+    <div class="swap_button" id="swapButton">
+      <!-- Font Awesome icon for swap -->
+      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+    </div>
+    
+    <div>
+      <!-- Dropdown for selecting 'to' currency -->
+      <select id="toDropdown"></select>
+      
+      <!-- Input field for displaying converted amount -->
+      <input type="number" id="amountTwo">
+    </div>
+  </form>
+
+  <!-- Script tag linking to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>

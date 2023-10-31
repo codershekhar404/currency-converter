@@ -1,0 +1,76 @@
+/* Importing Poppins font from Google Fonts with various weights */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Resetting default styles for margin, padding, and box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS variables for color scheme */
+:root {
+  --bg_color: #18181b;
+  --base_color: #155970;
+  --btn_color: #1e293b;
+}
+
+/* Setting the base font size for responsive design */
+html {
+  font-size: 16px;
+}
+
+/* Styling for the body element */
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--btn_color);
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the main container holding the form */
+.container {
+  width: 50%;
+  border-radius: 0.6rem;
+  padding: 3rem;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+/* Styling for number input and select dropdown */
+input[type="number"],
+select {
+  padding: 1rem 0.5rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+  border-radius: 0.4rem;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #eee;
+  border: 0.1rem solid #ccc;
+}
+
+/* Media query for responsive design at max-width 480px */
+@media (max-width: 480px) {
+
+  /* Adjusting styles for smaller screens */
+  .container {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 70%;
+  }
+
+  /* Adjusting styles for smaller screens */
+  input[type="number"],
+  select {
+    padding: 0.8rem;
+  }
+}
